@@ -1,0 +1,34 @@
+.hover-zoom {
+    transition: all 0.3s ease 0s;
+    width: 100%;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.25);
+}
+
+.main-contacts-form {
+    width: 90%;
+}
+
+.main-contacts-address {
+    width: 100%;
+}
+
+.main-form {
+    width: 90%;
+}
+
+@media only screen and (max-width: 1200px) {
+    .main-contacts-form {
+        width: 100%;
+    }
+
+    .main-contacts-address {
+        width: 75%;
+    }
+
+    .main-form {
+        width: 75%;
+    }
+}

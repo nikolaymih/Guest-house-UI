@@ -1,0 +1,47 @@
+.footer {
+
+    &-fb-card {
+        width: 450px;
+        height: 150px;
+        background-image: url("../../assets/images/korica.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        @media only screen and (max-width: 768px) {
+            width: 300px;
+        }
+        @media only screen and (max-width: 300px) {
+            width: 220px;
+        }
+    }
+
+    &-fb-logo {
+        width: 50px;
+        height: 50px;
+        border: 2px solid white;
+        margin: 0.5rem;
+        cursor: pointer;
+    }
+
+    &-fb-header {
+        font-size: 14px;
+        cursor: pointer;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-pageInfo {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    &-fb-share-btn {
+        font-size: 12px !important;
+        background-color: #F5F6F7 !important;
+        color: black !important;
+    }
+}

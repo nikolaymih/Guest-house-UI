@@ -4,7 +4,7 @@ import {Carousel} from "react-bootstrap";
 import useIsMobile from "../../utils/hooks/useIsMobile";
 import GoogleMap from "../../components/GoogleMap";
 
-import logo from '../../assets/images/logo.jpg';
+import mainPage from '../../assets/images/mainPage.jpg';
 import jakuzee from '../../assets/images/3.Carousel.jpg';
 import house from '../../assets/images/1.Carousel.jpg';
 import comfort from '../../assets/images/comfort2.jpg'
@@ -25,7 +25,7 @@ const Home = () => {
 					<img
 						className="d-block w-100 cover vh-100"
 						style={{objectFit: "cover"}}
-						src={logo}
+						src={mainPage}
 						alt="First slide"
 					/>
 				</Carousel.Item>

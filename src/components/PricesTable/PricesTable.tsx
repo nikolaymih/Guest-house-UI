@@ -1,6 +1,13 @@
 import React from 'react';
 import {Table} from "react-bootstrap";
 
+const BGN_TO_EUR = 1.9558;
+
+const formatPrice = (bgnPrice: number): string => {
+	const eurPrice = Math.round(bgnPrice / BGN_TO_EUR);
+	return `${eurPrice}€ / ${bgnPrice}лв.`;
+};
+
 const PricesTable = () => {
 	return (
 		<section>
@@ -69,8 +76,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>650</th>
-								<th>590</th>
+								<th>{formatPrice(650)}</th>
+								<th>{formatPrice(590)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -79,8 +86,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>1100</th>
-								<th>1000</th>
+								<th>{formatPrice(1100)}</th>
+								<th>{formatPrice(1000)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -89,8 +96,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>530</th>
-								<th>480</th>
+								<th>{formatPrice(530)}</th>
+								<th>{formatPrice(480)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -110,8 +117,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>650</th>
-								<th>590</th>
+								<th>{formatPrice(650)}</th>
+								<th>{formatPrice(590)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -120,8 +127,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>1100</th>
-								<th>1000</th>
+								<th>{formatPrice(1100)}</th>
+								<th>{formatPrice(1000)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -130,8 +137,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>530</th>
-								<th>480</th>
+								<th>{formatPrice(530)}</th>
+								<th>{formatPrice(480)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -151,8 +158,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>650</th>
-								<th>590</th>
+								<th>{formatPrice(650)}</th>
+								<th>{formatPrice(590)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -161,8 +168,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>1100</th>
-								<th>1000</th>
+								<th>{formatPrice(1100)}</th>
+								<th>{formatPrice(1000)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -171,8 +178,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>530</th>
-								<th>480</th>
+								<th>{formatPrice(530)}</th>
+								<th>{formatPrice(480)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -192,8 +199,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>650</th>
-								<th>590</th>
+								<th>{formatPrice(650)}</th>
+								<th>{formatPrice(590)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -202,8 +209,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>1100</th>
-								<th>1000</th>
+								<th>{formatPrice(1100)}</th>
+								<th>{formatPrice(1000)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -212,8 +219,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>530</th>
-								<th>480</th>
+								<th>{formatPrice(530)}</th>
+								<th>{formatPrice(480)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -233,8 +240,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>585</th>
-								<th>531</th>
+								<th>{formatPrice(585)}</th>
+								<th>{formatPrice(531)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -243,8 +250,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>990</th>
-								<th>900</th>
+								<th>{formatPrice(990)}</th>
+								<th>{formatPrice(900)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -253,8 +260,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>477</th>
-								<th>432</th>
+								<th>{formatPrice(477)}</th>
+								<th>{formatPrice(432)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -274,8 +281,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>553</th>
-								<th>502</th>
+								<th>{formatPrice(553)}</th>
+								<th>{formatPrice(502)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -284,8 +291,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>935</th>
-								<th>850</th>
+								<th>{formatPrice(935)}</th>
+								<th>{formatPrice(850)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -294,8 +301,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>451</th>
-								<th>408</th>
+								<th>{formatPrice(451)}</th>
+								<th>{formatPrice(408)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -315,8 +322,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>553</th>
-								<th>502</th>
+								<th>{formatPrice(553)}</th>
+								<th>{formatPrice(502)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -325,8 +332,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>935</th>
-								<th>850</th>
+								<th>{formatPrice(935)}</th>
+								<th>{formatPrice(850)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -335,8 +342,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>451</th>
-								<th>408</th>
+								<th>{formatPrice(451)}</th>
+								<th>{formatPrice(408)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -356,8 +363,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>520</th>
-								<th>472</th>
+								<th>{formatPrice(520)}</th>
+								<th>{formatPrice(472)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -366,8 +373,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>880</th>
-								<th>800</th>
+								<th>{formatPrice(880)}</th>
+								<th>{formatPrice(800)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -376,8 +383,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>424</th>
-								<th>384</th>
+								<th>{formatPrice(424)}</th>
+								<th>{formatPrice(384)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -397,8 +404,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>488</th>
-								<th>443</th>
+								<th>{formatPrice(488)}</th>
+								<th>{formatPrice(443)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -407,8 +414,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>825</th>
-								<th>750</th>
+								<th>{formatPrice(825)}</th>
+								<th>{formatPrice(750)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -417,8 +424,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>398</th>
-								<th>360</th>
+								<th>{formatPrice(398)}</th>
+								<th>{formatPrice(360)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -438,8 +445,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>488</th>
-								<th>443</th>
+								<th>{formatPrice(488)}</th>
+								<th>{formatPrice(443)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -448,8 +455,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>825</th>
-								<th>750</th>
+								<th>{formatPrice(825)}</th>
+								<th>{formatPrice(750)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -458,8 +465,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>398</th>
-								<th>360</th>
+								<th>{formatPrice(398)}</th>
+								<th>{formatPrice(360)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -479,8 +486,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>422</th>
-								<th>383</th>
+								<th>{formatPrice(422)}</th>
+								<th>{formatPrice(383)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -489,8 +496,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>715</th>
-								<th>650</th>
+								<th>{formatPrice(715)}</th>
+								<th>{formatPrice(650)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -499,8 +506,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>344</th>
-								<th>312</th>
+								<th>{formatPrice(344)}</th>
+								<th>{formatPrice(312)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -520,8 +527,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>422</th>
-								<th>383</th>
+								<th>{formatPrice(422)}</th>
+								<th>{formatPrice(383)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -530,8 +537,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr>
-								<th>715</th>
-								<th>650</th>
+								<th>{formatPrice(715)}</th>
+								<th>{formatPrice(650)}</th>
 							</tr>
 							</thead>
 						</table>
@@ -540,8 +547,8 @@ const PricesTable = () => {
 						<table className="table mb-0">
 							<thead>
 							<tr className="text-center">
-								<th>344</th>
-								<th>312</th>
+								<th>{formatPrice(344)}</th>
+								<th>{formatPrice(312)}</th>
 							</tr>
 							</thead>
 						</table>
